@@ -12,4 +12,4 @@ export SteamAppId=892970
 export LD_LIBRARY_PATH="/home/valheim/Steam/steamapps/common/Valheim dedicated server/linux64/"
 
 # shellcheck disable=SC2086
-Steam/steamapps/common/Valheim\ dedicated\ server/valheim_server.x86_64 $VALHEIM_SERVER_FLAGS
+Steam/steamapps/common/Valheim\ dedicated\ server/valheim_server.x86_64 $VALHEIM_SERVER_FLAGS | grep -v -f /logfilter

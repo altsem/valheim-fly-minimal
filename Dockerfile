@@ -12,6 +12,7 @@ RUN groupadd -g "${PGID:-1000}" -o valheim \
     && rm -rf /tmp/* /var/tmp/*
 
 COPY --chmod=0755 fly-bootstrap.sh /fly-bootstrap.sh
+COPY --chmod=0555 logfilter /logfilter
 
 WORKDIR /home/valheim
 USER valheim
